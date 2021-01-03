@@ -66,6 +66,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         //we initiate the media player with the music
+        musicPlayer.setVolume(0.5f,0.5f);
         preparedMediaPlayer(song.getPath());
 
         seekBarVolume.setProgress(50);
@@ -224,7 +225,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
         }
 
         musicPlayer.seekTo(0);
-        musicPlayer.setVolume(0.5f,0.5f);
         duration = millisecondsToString(musicPlayer.getDuration());
         durationInteger=musicPlayer.getDuration();
         tvDuration.setText(duration);
@@ -248,7 +248,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
                 position++;
             }
         }
-        Log.d("TAG", String.valueOf(position));
         Song songPreviousOrNext = songArrayList.get(position);
         tvTitle.setText(songPreviousOrNext.getTitle());
         tvArtist.setText(songPreviousOrNext.getArtist());
