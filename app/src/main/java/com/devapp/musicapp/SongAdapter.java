@@ -26,7 +26,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
         Song song = getItem(position);
         tvTitle.setText(song.getTitle());
-        tvArtist.setText(song.getTitle());
+        tvArtist.setText(song.getArtist());
 
         return convertView;
     }
