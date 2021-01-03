@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PlaylistActivity">
+
+    <ListView
+        android:id="@+id/lvPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:visibility="visible">
+    </ListView>
+
+    <ListView
+        android:id="@+id/lvSongs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible">
+    </ListView>
+
+
+    <ImageView
+        android:id="@+id/ivAddNewPlaylist"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/addplaylist"
+        android:text="my_playlist" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_arrow"
+        android:visibility="invisible"
+        android:text="my_playlist" />
+
+    <RelativeLayout
+        android:id="@+id/rlBlockAddPlaylist"
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Créer une nouvelle playlist ?"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etNamePlaylist"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:hint="Nom de la playlist" />
+
+        <Button
+            android:id="@+id/btnAddPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Valider"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ivCloseBlockPlaylist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:rotation="45"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/addplaylistblack"
+            android:text="my_playlist" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBlockValidationPlaylist"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tvTextValidationPlaylist"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La musique a été ajoutée à la playlist"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnValidationPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="OK"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
