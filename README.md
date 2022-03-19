@@ -3,11 +3,9 @@ Developping application project
 
 Subjects N°5 : MusicApp
 
-Group of 2 persons. 
 
 Arthur MIMOUNI, mail : arthur.mimouni@gmail.com
 
-Ashanth Chandramohan, mail : ashanth92@gmail.com
 
 --------------------------------------------------------------------------------
 DESCRIPTION 
